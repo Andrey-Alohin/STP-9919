@@ -23,3 +23,7 @@
 @import url('./contact.css');
 
 @import url('./footer.css');
+
+/* More Pages Style */
+
+@import url('./termsPrivacyHeader.css');

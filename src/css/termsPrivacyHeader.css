@@ -1,0 +1,19 @@
+.termsPrivacyHeader {
+  padding: 16px 0;
+}
+.back-link {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.back-arrow {
+  fill: transparent;
+  stroke: #d9f3fd;
+}
+
+@media only screen and (min-width: 1200px) {
+  .termsPrivacyHeader {
+    padding: 72px 0 28px;
+  }
+}
