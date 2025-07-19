@@ -1,0 +1,82 @@
+#download > .container {
+  text-align: center;
+}
+.downloadTitle {
+  font: 700 24px 'Nunito', sans-serif;
+  margin-bottom: 16px;
+}
+
+.downloadGameTitle {
+  font: 700 24px 'Nunito', sans-serif;
+  color: #ffcf00;
+  text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
+}
+
+.downloadDescriptionText {
+  font: 700 16px 'Nunito', sans-serif;
+  margin-bottom: 16px;
+}
+
+.downloadBtnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.downloadBtn {
+  padding: 16px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #fff;
+}
+.downloadBtn.google {
+  background-color: #126d26;
+}
+.downloadBtn.apple {
+  background-color: #d25353;
+}
+
+@media only screen and (min-width: 1200px) {
+  #download > .container {
+    max-width: 607px;
+    padding: 0;
+  }
+  .downloadTitle {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  .downloadGameTitle {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 32px;
+  }
+  .downloadDescriptionText {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 56px;
+  }
+  .downloadBtnWrapper {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+  }
+  .downloadBtn {
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 24px;
+  }
+  .downloadIconBtn.google {
+    width: 40px;
+    height: 44px;
+  }
+  .downloadIconBtn.apple {
+    width: 59px;
+    height: 44px;
+  }
+}
