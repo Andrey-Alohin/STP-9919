@@ -91,6 +91,11 @@
     font-size: 20px;
   }
 
+  .hero-google-icon {
+    width: 40px;
+    height: 44px;
+  }
+
   .hero-button {
     margin-right: 36px;
     gap: 16px;

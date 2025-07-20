@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  top: 1px;
+  top: 0px;
   z-index: 101;
   display: flex;
   justify-content: center;
