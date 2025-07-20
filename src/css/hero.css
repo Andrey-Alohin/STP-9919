@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 51px;
 }
 
 .hero-title {
@@ -12,7 +11,7 @@
   font-size: 36px;
   text-align: center;
   color: #ffcf00;
-  text-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
   margin-bottom: 16px;
 }
 
@@ -39,21 +38,18 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 16px 32px;
+  padding: 15.5px 42.5px;
 
-  box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
   background-color: #126d26;
   border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
 }
 
 .hero-google-icon {
   width: 24px;
-}
-
-.hero-google-text {
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -61,7 +57,6 @@
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: stretch;
-    margin-top: 133px;
     gap: 170px;
   }
 
@@ -97,14 +92,10 @@
   }
 
   .hero-button {
-    position: relative;
-    right: 36px;
+    margin-right: 36px;
     gap: 16px;
     border-radius: 12px;
-    padding: 16px;
-  }
-
-  .hero-google-text {
+    padding: 10px 15.5px;
     font-size: 24px;
   }
 }
