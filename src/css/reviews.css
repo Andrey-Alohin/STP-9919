@@ -1,0 +1,73 @@
+.reviewsTitle {
+  font: 700 24px 'Nunito', sans-serif;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.swiper.reviewsSwiper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  height: auto;
+}
+div.swiper-pagination.reviewsPagination[data-swiper='reviewsPagination'] {
+  position: unset;
+  transform: none;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  background-color: #1e1e1e;
+}
+span.swiper-pagination-bullet {
+  background-color: #d9f3fd;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+.reviewCardIcon {
+  display: block;
+  fill: #d9f3fd;
+}
+
+.reviewText {
+  margin-bottom: 24px;
+}
+
+.reviewAuthor {
+  font: 700 16px 'Nunito', sans-serif;
+}
+
+.swiper-slide.reviewCard {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.reviewCardTextWrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 26px 24px 34px;
+  border-radius: 8px;
+  background-color: #16a72e;
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviewsTitle {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+  .swiper.reviewsSwiper {
+    gap: 48px;
+  }
+  .reviewCardTextWrapper {
+    padding: 10px 22px;
+  }
+  .reviewText {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .reviewAuthor {
+    font-size: 24px;
+  }
+}
