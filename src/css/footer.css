@@ -1,8 +1,8 @@
 .footer {
   background-color: #170b45;
+  padding: 8px 0;
 }
 .footer-wrapper {
-  padding: 8px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -22,8 +22,11 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 59px 0;
+  }
   .footer-wrapper {
-    padding: 59px 0 64px;
+    gap: 24px;
   }
   .footer-links {
     display: flex;
