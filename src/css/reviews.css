@@ -3,18 +3,12 @@
   text-align: center;
   margin-bottom: 16px;
 }
-.reviewCardIcon {
-  display: block;
-  fill: #d9f3fd;
-}
 .swiper.reviewsSwiper {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
-}
-.swiper-slide.reviewCard {
-  border-radius: 12px;
+  height: auto;
 }
 div.swiper-pagination.reviewsPagination[data-swiper='reviewsPagination'] {
   position: unset;
@@ -29,10 +23,9 @@ span.swiper-pagination-bullet {
   height: 15px;
   opacity: 1;
 }
-.reviewCardTextWrapper {
-  padding: 24px 26px 24px 34px;
-  border-radius: 8px;
-  background-color: #16a72e;
+.reviewCardIcon {
+  display: block;
+  fill: #d9f3fd;
 }
 
 .reviewText {
@@ -41,4 +34,40 @@ span.swiper-pagination-bullet {
 
 .reviewAuthor {
   font: 700 16px 'Nunito', sans-serif;
+}
+
+.swiper-slide.reviewCard {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.reviewCardTextWrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 26px 24px 34px;
+  border-radius: 8px;
+  background-color: #16a72e;
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviewsTitle {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+  .swiper.reviewsSwiper {
+    gap: 48px;
+  }
+  .reviewCardTextWrapper {
+    padding: 10px 22px;
+  }
+  .reviewText {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .reviewAuthor {
+    font-size: 24px;
+  }
 }

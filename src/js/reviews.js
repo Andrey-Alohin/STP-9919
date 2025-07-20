@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -8,18 +8,29 @@ const swiperRewiews = document.querySelector('[data-swiper="reviews"]');
 const swiperPagination = document.querySelector(
   '[data-swiper="reviewsPagination"]'
 );
-console.log('worked', swiperRewiews);
 
 const swiper = new Swiper(swiperRewiews, {
-  modules: [Pagination],
-  spaceBetween: '16px',
+  modules: [Pagination, Keyboard],
+  effect: 'coverflow',
   loop: true,
+  keyboard: true,
+  centeredSlides: true,
+  slidesPerView: 1,
   initialSlide: 2,
+  grabCursor: true,
+  coverflowEffect: {
+    slideShadows: false,
+    scale: 0.8,
+    rotate: 40,
+    stretch: -16,
+  },
   breakpoints: {
     1200: {
       slidesPerView: 3,
-      // width: 1200,
-      centeredSlides: true,
+      freeMode: true,
+      coverflowEffect: {
+        stretch: -24,
+      },
     },
   },
   pagination: {
@@ -29,14 +40,3 @@ const swiper = new Swiper(swiperRewiews, {
     progressbarFillClass: true,
   },
 });
-// document.addEventListener('DOMContentLoaded', () => {
-//   const swiperRewiews = document.querySelector('[data-swiper="reviews"]');
-
-//   if (swiperRewiews) {
-//     new Swiper(swiperRewiews, {
-//       pagination: {
-//         el: '[data-swiper="reviewsPagination"]',
-//       },
-//     });
-//   }
-// });
