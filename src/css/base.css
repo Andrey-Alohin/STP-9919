@@ -11,6 +11,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: radial-gradient(50% 50% at 50% 50%, #0d77e4 0%, #2d128e 100%);
   display: flex;
