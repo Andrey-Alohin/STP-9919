@@ -18,8 +18,6 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, #0d77e4 0%, #2d128e 100%);
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
   margin: 0;
 }
 
