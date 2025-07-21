@@ -14,14 +14,13 @@
 }
 
 .gamedescr-image {
-  width: 288px;
-  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
   margin-top: -132px;
-  border-radius: 9px;
 }
 
 .gamedescr-image-border {
   border-radius: 9px;
+  width: 288px;
+  box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.25);
 }
 .gamedescr-image:first-child {
   margin-top: 0;
@@ -97,10 +96,9 @@
 
   .descr-text-container {
     font-size: 18px;
-    width: 456px;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 84px;
+    padding-top: 84px;
   }
 
   .gamedescr-descr1-span {
@@ -109,11 +107,8 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .gamedescr-descr1 {
-    max-width: 440px;
-  }
-
   .gamedescr-images-container {
+    flex-shrink: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -122,14 +117,12 @@
 
   .gamedescr-image {
     margin-top: 0;
-    width: 300px;
-    border-radius: 12px;
   }
 
   .gamedescr-image-border {
-    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     width: 300px;
+    height: 349px;
   }
 
   .gamedescr-image:nth-child(2) {
