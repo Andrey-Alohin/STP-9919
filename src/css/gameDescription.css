@@ -1,0 +1,148 @@
+.gamedescr-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #d9f3fd;
+}
+
+.gamedescr-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gamedescr-image {
+  width: 288px;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
+  margin-top: -132px;
+  border-radius: 9px;
+}
+
+.gamedescr-image-border {
+  border-radius: 9px;
+}
+.gamedescr-image:first-child {
+  margin-top: 0;
+}
+
+.gamedescr-images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gamedescr-descr1-span {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.gamedescr-readmore-btn {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: none;
+  color: #d9f3fd;
+  margin-top: 8px;
+}
+
+.descr-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamedescr-descr2 {
+  margin-top: 16px;
+}
+
+[data-readmore='closed'] {
+  display: none;
+}
+
+[data-hiddentext='closed'] {
+  display: none;
+}
+
+[data-readmore='open'] {
+  display: block;
+}
+
+[data-hiddentext='open'] {
+  display: inline;
+}
+
+@media only screen and (min-width: 1200px) {
+  [data-readmore] {
+    display: none;
+  }
+
+  [data-hiddentext] {
+    display: inline;
+  }
+
+  .gamedescr-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+
+  .gamedescr-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .descr-text-container {
+    font-size: 18px;
+    width: 456px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 84px;
+  }
+
+  .gamedescr-descr1-span {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .gamedescr-descr1 {
+    max-width: 440px;
+  }
+
+  .gamedescr-images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .gamedescr-image {
+    margin-top: 0;
+    width: 300px;
+    border-radius: 12px;
+  }
+
+  .gamedescr-image-border {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    width: 300px;
+  }
+
+  .gamedescr-image:nth-child(2) {
+    margin-bottom: 42px;
+    margin-left: -126px;
+  }
+
+  .gamedescr-image:nth-child(3) {
+    margin-bottom: 84px;
+    margin-left: -126px;
+  }
+
+  .gamedescr-descr2 {
+    margin-top: 40px;
+  }
+}
