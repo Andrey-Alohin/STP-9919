@@ -1,4 +1,4 @@
-#download > .container {
+#download-section > .container {
   text-align: center;
 }
 .downloadTitle {
@@ -44,10 +44,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  #download > .container {
-    max-width: 607px;
-    padding: 0;
-  }
   .downloadTitle {
     font-size: 40px;
     margin-bottom: 60px;
