@@ -1,0 +1,81 @@
+.cookies-backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cookies-backdrop > .container {
+  box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.25);
+  padding: 24px 0;
+  min-width: unset;
+  max-width: 288px;
+  background-color: #170b45;
+  margin-bottom: 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+.cookies-modal-title {
+  font: 700 24px 'Nunito', sans-serif;
+  margin-bottom: 16px;
+}
+.cookies-modal-text {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+.cookies-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.cookies-btn {
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cookies-btn.accept {
+  background-color: #126d26;
+}
+
+.cookies-btn.decline {
+  background-color: #fd0000;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cookies-backdrop > .container {
+    padding: 64px 0 29px;
+    max-width: 833px;
+    border-radius: 12px;
+    margin: auto;
+  }
+  .cookies-modal-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .cookies-modal-text {
+    padding: 0 46px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 110px;
+  }
+  .cookies-btn-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+  .cookies-btn {
+    border-radius: 12px;
+    font-size: 24px;
+  }
+}
