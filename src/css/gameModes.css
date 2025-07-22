@@ -1,0 +1,51 @@
+.gameModes-title {
+  font: 700 24px 'Nunito', sans-serif;
+  text-align: center;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 1200px) {
+  .gameModes-title {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+}
+
+.gameModes-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.gameModes-scroll-container {
+  position: relative;
+  width: 288px;
+  height: 432px;
+}
+.scroll-text {
+  position: absolute;
+  top: 0;
+  color: rgba(30, 30, 30, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.scroll-text.first-scroll {
+  padding: 94px 55px 94px 82px;
+}
+.scroll-text.second-scroll {
+  padding: 96.5px 72px 130px 68px;
+}
+
+.scroll-title {
+  font: 700 16px 'Nunito', sans-serif;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.scroll-title::before {
+  content: '\2022';
+  margin-right: 6px;
+}
+/*
+.scroll-text-item {
+} */

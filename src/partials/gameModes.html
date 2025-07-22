@@ -1,3 +1,83 @@
 <section>
-  <div class="container"><h2>Game Modes</h2></div>
+  <div class="container">
+    <h2 class="gameModes-title">Game Modes</h2>
+    <div class="gameModes-background">
+      <div class="gameModes-scroll-container">
+        <picture>
+          <source
+            srcset="
+              ./img/gameModes/scroll_desc/modes_scroll_desc_1_1x.png 1x,
+              ./img/gameModes/scroll_desc/modes_scroll_desc_1_2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./img/gameModes/scroll_mob/modes_scroll_1_1x.png 1x,
+              ./img/gameModes/scroll_mob/modes_scroll_1_2x.png 2x
+            "
+            media="(max-width: 1199px)"
+          />
+          <source />
+          <img
+            class="descr-image"
+            loading="lazy"
+            src="./img/gameModes/scroll_mob/modes_scroll_1_1x.png"
+            alt="scroll image"
+          />
+        </picture>
+        <ul class="scroll-text first-scroll">
+          <li class="scroll-text-item">
+            <span class="break scroll-title">Classic Untangle:</span> Solve one
+            tangled mess at a time
+          </li>
+          <li>
+            <span class="break scroll-title">Timed Challenge:</span> Beat the
+            rope puzzle before the clock runs out
+          </li>
+          <li>
+            <span class="break scroll-title">Zen Mode:</span>No timers, just
+            smooth puzzles and calm music
+          </li>
+        </ul>
+      </div>
+      <div class="gameModes-scroll-container">
+        <picture>
+          <source
+            srcset="
+              ./img/gameModes/scroll_desc/modes_scroll_desc_2_1x.png 1x,
+              ./img/gameModes/scroll_desc/modes_scroll_desc_2_2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./img/gameModes/scroll_mob/modes_scroll_2_1x.png 1x,
+              ./img/gameModes/scroll_mob/modes_scroll_2_2x.png 2x
+            "
+            media="(max-width: 1199px)"
+          />
+          <source />
+          <img
+            class="descr-image"
+            loading="lazy"
+            src="./img/gameModes/scroll_mob/modes_scroll_2_1x.png"
+            alt="scroll image"
+          />
+        </picture>
+        <ul class="scroll-text second-scroll">
+          <li class="scroll-text-item">
+            <span class="break scroll-title">Daily Puzzle:</span> New rope
+            configuration each day
+          </li>
+          <li>
+            <span class="break scroll-title"
+              >Puzzle Builder (Coming Soon):</span
+            >
+            Design your own tangles and share with friends
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
