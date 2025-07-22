@@ -1,0 +1,42 @@
+.gallery-title {
+  font: 700 24px 'Nunito', sans-serif;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 16px;
+}
+
+div.swiper-pagination.galleryPagination[data-swiper='galleryPagination'] {
+  position: unset;
+  transform: none;
+  margin: 0 auto;
+}
+
+.swiper-slide.galleryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.gallery-img {
+  width: 230px;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gallery-title {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+  .gallery-img {
+    border-radius: 14px;
+    width: 264px;
+    height: 400px;
+  }
+  .swiper-wrapper {
+    margin-bottom: 80px;
+  }
+}
