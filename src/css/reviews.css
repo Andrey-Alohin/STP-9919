@@ -3,18 +3,15 @@
   text-align: center;
   margin-bottom: 16px;
 }
-.swiper.reviewsSwiper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  height: auto;
-}
 div.swiper-pagination.reviewsPagination[data-swiper='reviewsPagination'] {
   position: unset;
   transform: none;
+  margin: 0 auto;
 }
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  background-color: #1e1e1e;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #1e1e1e;
 }
 span.swiper-pagination-bullet {
@@ -57,8 +54,8 @@ span.swiper-pagination-bullet {
     font-size: 40px;
     margin-bottom: 56px;
   }
-  .swiper.reviewsSwiper {
-    gap: 48px;
+  .reviewsSwiper > .swiper-wrapper {
+    margin-bottom: 48px;
   }
   .reviewCardTextWrapper {
     padding: 10px 22px;

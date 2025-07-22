@@ -1,40 +1,47 @@
 import Swiper from 'swiper';
-import { EffectCoverflow, Keyboard, Pagination } from 'swiper/modules';
+import {
+  EffectCoverflow,
+  EffectCards,
+  Keyboard,
+  Pagination,
+  EffectCreative,
+} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-Swiper.use([EffectCoverflow]);
+Swiper.use([EffectCoverflow, EffectCards, EffectCreative]);
 const swiperRewiews = document.querySelector('[data-swiper="gallery"]');
 const swiperGalleryPagination = document.querySelector(
   '[data-swiper="galleryPagination"]'
 );
 
-const swiper = new Swiper(swiperRewiews, {
+const swiperGallery = new Swiper(swiperRewiews, {
   modules: [Pagination, Keyboard],
-  // effect: 'coverflow',
-  loop: true,
+  effect: 'coverflow',
   keyboard: true,
   centeredSlides: true,
   slidesPerView: 1,
-  initialSlide: 2,
+  initialSlide: 0,
   grabCursor: true,
-  // coverflowEffect: {
-  //   slideShadows: false,
-  //   scale: 0.8,
-  //   rotate: 40,
-  //   stretch: -16,
-  // },
+  spaceBetween: 16,
+  cardsEffect: {
+    slideShadows: false,
+  },
+  coverflowEffect: {
+    slideShadows: false,
+    scale: 0.8,
+    rotate: 30,
+    stretch: -16,
+  },
   breakpoints: {
     1200: {
-      slidesPerView: 4,
-      centeredSlides: false,
+      slidesPerView: 3,
+      initialSlide: 0,
       spaceBetween: 24,
-      // effect: 'coverflow',
     },
   },
   pagination: {
     el: swiperGalleryPagination,
     dynamicBullets: true,
-    dynamicMainBullets: true,
   },
 });

@@ -12,7 +12,6 @@ const swiperPagination = document.querySelector(
 const swiper = new Swiper(swiperRewiews, {
   modules: [Pagination, Keyboard],
   effect: 'coverflow',
-  loop: true,
   keyboard: true,
   centeredSlides: true,
   slidesPerView: 1,
@@ -27,7 +26,7 @@ const swiper = new Swiper(swiperRewiews, {
   breakpoints: {
     1200: {
       slidesPerView: 3,
-      freeMode: true,
+      // freeMode: true,
       coverflowEffect: {
         stretch: -24,
       },
