@@ -7,6 +7,7 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./loader.css');
 @import url('./container.css');
 
 /* Sections style */
@@ -29,3 +30,6 @@
 
 @import url('./termsPrivacyHeader.css');
 @import url('./privacyPolicy.css');
+@import url('./cookiesModal.css');
+
+@import url('./animationHoverClick.css');

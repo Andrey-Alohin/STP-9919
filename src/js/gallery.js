@@ -1,49 +1,52 @@
 import Swiper from 'swiper';
-import {
-  EffectCoverflow,
-  EffectCards,
-  Keyboard,
-  Pagination,
-  EffectCreative,
-} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { EffectCoverflow, Keyboard, Pagination } from 'swiper/modules';
 
-Swiper.use([EffectCoverflow, EffectCards, EffectCreative]);
-const swiperRewiews = document.querySelector('[data-swiper="gallery"]');
-const swiperGalleryPagination = document.querySelector(
-  '[data-swiper="galleryPagination"]'
-);
+Swiper.use([EffectCoverflow]);
+const swiperGalleryRefs = {
+  swiper: document.querySelector('[data-swiper="gallery"]'),
+  pagination: document.querySelector('[data-swiper="galleryPagination"]'),
+};
 
-const swiperGallery = new Swiper(swiperRewiews, {
-  modules: [Pagination, Keyboard],
-  effect: 'coverflow',
-  keyboard: true,
-  centeredSlides: true,
-  slidesPerView: 1,
-  initialSlide: 0,
-  grabCursor: true,
-  spaceBetween: 16,
-  cardsEffect: {
-    slideShadows: false,
-  },
-  coverflowEffect: {
-    slideShadows: false,
-    scale: 0.8,
-    rotate: 30,
-    stretch: -16,
-  },
-  breakpoints: {
-    1200: {
-      slidesPerView: 4,
-      effect: 'slide',
-      centeredSlides: false,
-      initialSlide: 0,
-      spaceBetween: 24,
+const useEffect = () => (window.innerWidth >= 1200 ? 'slide' : 'coverflow');
+
+let swiperGallery = null;
+
+function initialGallerySwiper() {
+  if (swiperGallery) swiperGallery.destroy(true, true);
+
+  let effect = useEffect();
+
+  swiperGallery = new Swiper(swiperGalleryRefs.swiper, {
+    modules: [Pagination, Keyboard],
+    effect: effect,
+    keyboard: true,
+    grabCursor: true,
+    centeredSlides: effect === 'coverflow',
+    slidesPerView: effect === 'coverflow' ? 1 : 4,
+    spaceBetween: effect === 'coverflow ' ? 16 : 24,
+    coverflowEffect: {
+      slideShadows: false,
+      scale: 0.8,
+      rotate: 30,
+      stretch: -16,
     },
-  },
-  pagination: {
-    el: swiperGalleryPagination,
-    dynamicBullets: true,
-  },
+    pagination: {
+      el: swiperGalleryRefs.pagination,
+      dynamicBullets: true,
+    },
+  });
+}
+
+initialGallerySwiper();
+
+let lastEffect = useEffect();
+
+window.addEventListener('resize', () => {
+  const newEffect = useEffect();
+  if (newEffect !== lastEffect) {
+    lastEffect = newEffect;
+    initialGallerySwiper();
+  } else {
+    // swiperGallery.update();
+  }
 });

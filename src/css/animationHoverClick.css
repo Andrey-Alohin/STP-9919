@@ -1,0 +1,92 @@
+.animateHoverButtonGreen,
+.animateHoverButtonRed,
+.animateHoverButtonAppStore,
+.animateHoverButtonHero {
+  transition: background-color 300ms ease-in-out;
+}
+.animateHoverButtonGreen:hover,
+.animateHoverButtonGreen:focus {
+  background-color: #50b666;
+}
+.animateHoverButtonGreen:active {
+  background-color: #0a4016;
+}
+
+.animateHoverButtonRed:hover,
+.animateHoverButtonRed:focus {
+  background-color: #ba5757;
+}
+.animateHoverButtonRed:active {
+  background-color: #ab0101;
+}
+
+.animateHoverButtonAppStore:hover,
+.animateHoverButtonAppStore:focus {
+  background-color: #ff3131;
+}
+
+.animateHoverButtonAppStore:active {
+  background-color: #f00;
+}
+
+.animateHoverButtonHero:hover,
+.animateHoverButtonHero:focus {
+  background-color: #1dc141;
+}
+
+.animateHoverButtonHero:active {
+  background-color: #0c4b1a;
+}
+
+.animateHeaderBtns {
+  display: inline-block;
+  transition: transform 300ms ease-in-out;
+}
+
+.animateHeaderBtns:hover,
+.animateHeaderBtns:focus {
+  text-decoration: underline;
+}
+.animateHeaderBtns:active {
+  transform: scale(1.125);
+}
+.underline-animate {
+  position: relative;
+  color: inherit;
+  width: fit-content;
+  transition: transform 300ms ease-in-out;
+}
+
+.underline-animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+.underline-animate:hover,
+.underline-animate:focus {
+  transform: translateY(-2px);
+}
+.underline-animate:hover::after,
+.underline-animate:focus::after {
+  width: 100%;
+}
+.underline-animate:active {
+  transform: scale(1.05);
+}
+
+.animateHoverLinksOnPrivacyPages {
+  transition: background-color 300ms ease-in-out;
+  border-radius: 2px;
+}
+.animateHoverLinksOnPrivacyPages:hover,
+.animateHoverLinksOnPrivacyPages:focus {
+  background-color: #515151c2;
+}
+.animateHoverLinksOnPrivacyPages:active {
+  background-color: #4b3636;
+}

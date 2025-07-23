@@ -1,4 +1,7 @@
 import 'modern-normalize';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import './js/cookiesModal.js';
 import '/js/burgerButton.js';
 import './js/reviews';
 import '/js/gameDescriptionReadMore.js';
