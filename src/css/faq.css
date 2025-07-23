@@ -1,0 +1,133 @@
+.faq-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-question {
+  background-color: #a86700;
+  border-radius: 8px;
+}
+
+.faq-question-btn {
+  padding: 8px;
+  background-color: inherit;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: inherit;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-icon-cont {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.faq-minus-icon,
+.faq-plus-icon {
+  fill: white;
+  position: absolute;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transform: scale(0);
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+button[data-active='false'] .faq-plus-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+button[data-active='true'] .faq-minus-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-accordion] {
+  transition: 0.4s;
+}
+
+.faq-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out, padding-bottom 0.2s ease-out;
+  box-sizing: content-box;
+  padding: 0 50px 0 8px;
+}
+
+.faq-panel[data-active='true'] {
+  padding-bottom: 8px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .faq-title {
+    font-size: 40px;
+    margin-bottom: 42px;
+  }
+
+  .faq-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .faq-img {
+    align-self: center;
+  }
+  .faq-list {
+    gap: 24px;
+  }
+
+  .faq-question {
+    border-radius: 12px;
+    width: 648px;
+  }
+
+  .faq-question-btn {
+    padding: 14px 16px;
+    font-size: 24px;
+  }
+
+  .faq-panel {
+    padding: 0px 100px 0 16px;
+  }
+
+  .faq-icon-cont {
+    width: 44px;
+    height: 44px;
+  }
+
+  .faq-plus-icon,
+  .faq-minus-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .faq-panel[data-active='true'] {
+    padding-bottom: 14px;
+  }
+}
