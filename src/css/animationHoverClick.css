@@ -38,19 +38,6 @@
   background-color: #0c4b1a;
 }
 
-.animateHoverLink {
-  transition: transform 300ms ease-in-out;
-}
-
-.animateHoverLink:hover,
-.animateHoverLink:focus {
-  text-decoration: underline;
-}
-
-.animateHoverLink:active {
-  transform: translateY(4px);
-}
-
 .animateHeaderBtns {
   display: inline-block;
   transition: transform 300ms ease-in-out;
@@ -63,25 +50,34 @@
 .animateHeaderBtns:active {
   transform: scale(1.125);
 }
-/* .underline-animate {
+.underline-animate {
   position: relative;
   color: inherit;
+  width: fit-content;
+  transition: transform 300ms ease-in-out;
 }
 
 .underline-animate::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 0%;
-  height: 2px;
+  height: 1px;
   background-color: currentColor;
   transition: width 0.3s ease;
 }
-
-.underline-animate:hover::after {
+.underline-animate:hover,
+.underline-animate:focus {
+  transform: translateY(-2px);
+}
+.underline-animate:hover::after,
+.underline-animate:focus::after {
   width: 100%;
-} */
+}
+.underline-animate:active {
+  transform: scale(1.05);
+}
 
 .animateHoverLinksOnPrivacyPages {
   transition: background-color 300ms ease-in-out;
