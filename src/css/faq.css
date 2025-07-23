@@ -1,0 +1,53 @@
+.faq-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-question {
+  background-color: #a86700;
+  border-radius: 8px;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: ;
+}
+
+.faq-question-btn {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: inherit;
+  background-color: inherit;
+  width: 100%;
+  text-align: left;
+}
+
+[data-accordion] {
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* [data-active='true'],
+[data-accordion]:hover {
+  background-color: #ccc;
+} */
+
+/* Style the accordion panel. Note: hidden by default */
+.faq-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
