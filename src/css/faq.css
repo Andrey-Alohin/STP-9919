@@ -30,12 +30,11 @@
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  color: #fff;
+  color: inherit;
   cursor: pointer;
   border: none;
   border-radius: inherit;
   width: 100%;
-  text-align: left;
 
   display: flex;
   align-items: center;
@@ -65,8 +64,7 @@ button[data-active='true'] .faq-minus-icon {
   overflow: hidden;
   transition: max-height 0.2s ease-out, padding-bottom 0.2s ease-out;
   box-sizing: content-box;
-  padding: 0 8px;
-  color: #fff;
+  padding: 0 50px 0 8px;
 }
 
 .faq-panel[data-active='true'] {
@@ -82,9 +80,12 @@ button[data-active='true'] .faq-minus-icon {
   .faq-container {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 16px;
   }
-
+  .faq-img {
+    align-self: center;
+  }
   .faq-list {
     gap: 24px;
   }
@@ -100,12 +101,7 @@ button[data-active='true'] .faq-minus-icon {
   }
 
   .faq-panel {
-    display: flex;
-    justify-content: start;
-    font-size: 24px;
-    text-align: left;
-    max-width: 535px;
-    padding-left: 16px;
+    padding: 0px 100px 0 16px;
   }
 
   .faq-plus-icon,
