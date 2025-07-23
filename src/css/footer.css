@@ -16,6 +16,7 @@
 }
 .links-breaks {
   display: none;
+  white-space: pre;
 }
 .footer-descr {
   font-size: 10px;
