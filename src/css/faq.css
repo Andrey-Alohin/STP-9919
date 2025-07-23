@@ -40,19 +40,31 @@
   align-items: center;
   justify-content: space-between;
 }
+.faq-icon-cont {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
 
 .faq-minus-icon,
 .faq-plus-icon {
   fill: white;
-  display: none;
+  position: absolute;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  transform: scale(0);
+  top: 0;
+  right: 0;
+  opacity: 0;
 }
 
 button[data-active='false'] .faq-plus-icon {
-  display: inline-block;
+  opacity: 1;
+  transform: scale(1);
 }
 
 button[data-active='true'] .faq-minus-icon {
-  display: inline-block;
+  opacity: 1;
+  transform: scale(1);
 }
 
 [data-accordion] {
@@ -102,6 +114,11 @@ button[data-active='true'] .faq-minus-icon {
 
   .faq-panel {
     padding: 0px 100px 0 16px;
+  }
+
+  .faq-icon-cont {
+    width: 44px;
+    height: 44px;
   }
 
   .faq-plus-icon,
