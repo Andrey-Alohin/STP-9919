@@ -7,13 +7,22 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  /* Можливий background
+  background-color: rgba(37, 92, 240, 0.5);
+  backdrop-filter: blur(30px); */
+  transition: transform 300ms ease-in-out;
+  transform: translateY(100%);
+  pointer-events: none;
 }
 
-.cookies-backdrop > .container {
+[data-modal-cookies='true'] {
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.cookies-container {
   box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.25);
   padding: 24px 0;
-  min-width: unset;
-  max-width: 288px;
   background-color: #170b45;
   margin-bottom: 24px;
   text-align: center;
@@ -53,11 +62,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .cookies-backdrop > .container {
+  .cookies-backdrop {
+    align-items: center;
+  }
+  .cookies-container {
     padding: 64px 0 29px;
     max-width: 833px;
     border-radius: 12px;
-    margin: auto;
+    margin: 0;
   }
   .cookies-modal-title {
     font-size: 32px;
