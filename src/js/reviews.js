@@ -13,7 +13,6 @@ const swiperRewiews = new Swiper(swiperRewiewsRefs.swiper, {
   keyboard: true,
   centeredSlides: true,
   slidesPerView: 1,
-  initialSlide: 2,
   grabCursor: true,
   coverflowEffect: {
     slideShadows: false,

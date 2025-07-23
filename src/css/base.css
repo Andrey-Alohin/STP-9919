@@ -44,3 +44,7 @@ section:last-child {
     padding: 56px 0 112px;
   }
 }
+
+[data-modal-window='open'] {
+  overflow: hidden;
+}

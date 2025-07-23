@@ -22,6 +22,7 @@ const clickOnBtn = e => {
   const value = e.target.dataset.modalBtn;
   localStorage.setItem(LOCAL_KEY, value);
   cookiesModal.dataset.modalCookies = 'false';
+  document.body.dataset.modalWindow = 'close';
   cookiesModal.addEventListener('transitionend', handleTransitionEnd);
 };
 
@@ -33,6 +34,7 @@ if (cookiesModal) {
       return;
     }
     cookiesModal.dataset.modalCookies = 'true';
+    document.body.dataset.modalWindow = 'open';
     cookiesBtns.forEach(btn => {
       btn.addEventListener('click', clickOnBtn);
     });
