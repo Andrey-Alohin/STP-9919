@@ -154,6 +154,10 @@
     padding: 0;
   }
   .gamedescr-descr2 {
+    max-height: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
     margin-top: 40px;
   }
 }
