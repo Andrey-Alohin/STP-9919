@@ -7,9 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* Можливий background
-  background-color: rgba(37, 92, 240, 0.5);
-  backdrop-filter: blur(30px); */
   transition: transform 300ms ease-in-out;
   transform: translateY(100%);
   pointer-events: none;
