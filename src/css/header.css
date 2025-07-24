@@ -33,6 +33,10 @@
   cursor: pointer;
   background: none;
   border: none;
+  padding: 0;
+}
+.header-burger-button > svg {
+  display: block;
 }
 
 .header-logo {
