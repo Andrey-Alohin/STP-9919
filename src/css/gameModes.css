@@ -29,7 +29,7 @@
   border-radius: 8px;
   width: 100%;
   height: 100%;
-  opacity: 30%;
+  opacity: 40%;
   background-image: url('/img/gameModes/back_mob/back_modes_mob_1_1x.webp'),
     url('/img/gameModes/back_mob/back_modes_mob_2_1x.webp');
   background-size: 100% 50%, 100% 50%;
@@ -42,24 +42,37 @@
       url('/img/gameModes/back_mob/back_modes_mob_2_2x.webp');
   }
 }
-.gameModes-scroll-container {
-  position: relative;
+.scroll-text {
   width: 288px;
   height: 432px;
+  z-index: 1;
 }
 .scroll-text {
-  position: absolute;
-  top: 0;
   color: rgba(30, 30, 30, 0.8);
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .scroll-text.first-scroll {
+  background-image: url('/img/gameModes/scroll_mob/modes_scroll_1_1x.png');
+  background-size: cover;
   padding: 94px 55px 94px 82px;
 }
+@media (min-resolution: 192dpi) {
+  .scroll-text.first-scroll {
+    background-image: url('/img/gameModes/scroll_mob/modes_scroll_1_2x.png');
+  }
+}
 .scroll-text.second-scroll {
+  background-image: url('/img/gameModes/scroll_mob/modes_scroll_2_1x.png');
+  background-size: cover;
   padding: 96.5px 72px 130px 68px;
+}
+
+@media (min-resolution: 192dpi) {
+  .scroll-text.second-scroll {
+    background-image: url('/img/gameModes/scroll_mob/modes_scroll_2_2x.png');
+  }
 }
 
 .scroll-title {
@@ -91,11 +104,11 @@
         url('/img/gameModes/back_desc/back_modes_desc_2_2x.webp');
     }
   }
-  .gameModes-scroll-container {
+  .scroll-text {
     width: 495px;
     height: 700.5px;
   }
-  .second-container {
+  .scroll-text.second-scroll {
     margin-top: 377px;
     height: 744px;
   }
@@ -104,10 +117,20 @@
     text-align: start;
   }
   .scroll-text.first-scroll {
+    background-image: url('/img/gameModes/scroll_desc/modes_scroll_desc_1_1x.png');
     padding: 151px 120px 169px 142px;
   }
   .scroll-text.second-scroll {
+    background-image: url('/img/gameModes/scroll_desc/modes_scroll_desc_2_1x.png');
     padding: 162px 114px 271px 138px;
+  }
+  @media (min-resolution: 192dpi) {
+    .scroll-text.first-scroll {
+      background-image: url('/img/gameModes/scroll_desc/modes_scroll_desc_1_2x.png');
+    }
+    .scroll-text.second-scroll {
+      background-image: url('/img/gameModes/scroll_desc/modes_scroll_desc_2_2x.png');
+    }
   }
   .scroll-title {
     font-size: 24px;
