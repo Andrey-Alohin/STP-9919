@@ -38,19 +38,8 @@
   background-color: #0c4b1a;
 }
 
-.animateHeaderBtns {
-  display: inline-block;
-  transition: transform 300ms ease-in-out;
-}
-
-.animateHeaderBtns:hover,
-.animateHeaderBtns:focus {
-  text-decoration: underline;
-}
-.animateHeaderBtns:active {
-  transform: scale(1.125);
-}
 .underline-animate {
+  display: flex;
   position: relative;
   color: inherit;
   width: fit-content;
