@@ -1,6 +1,5 @@
 .animateHoverButtonGreen,
 .animateHoverButtonRed,
-.animateHoverButtonAppStore,
 .animateHoverButtonHero {
   transition: background-color 300ms ease-in-out;
 }
@@ -18,15 +17,6 @@
 }
 .animateHoverButtonRed:active {
   background-color: #ab0101;
-}
-
-.animateHoverButtonAppStore:hover,
-.animateHoverButtonAppStore:focus {
-  background-color: #ff3131;
-}
-
-.animateHoverButtonAppStore:active {
-  background-color: #f00;
 }
 
 .animateHoverButtonHero:hover,
